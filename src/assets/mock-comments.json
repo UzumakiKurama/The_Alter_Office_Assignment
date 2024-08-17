@@ -1,0 +1,76 @@
+[
+    {
+        "id" : 1,
+        "parent_comment" : "",
+        "user_name" : "Abhijeet Behera",
+        "user_image" : "https://randomuser.me/api/portraits/men/68.jpg",
+        "comment_text" : "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.What's happened to me? he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.",
+        "timestamp" : "2024-08-15T15:13:05.093Z",
+        "like_count" : 10,
+        "smile_count" : 12,
+        "dislike_count" : 5,
+        "replies" : [
+            {
+                "id" : 4,
+                "parent_comment" : "Abhijeet Behera",
+                "user_name" : "Bablu Pandit",
+                "user_image" : "https://randomuser.me/api/portraits/men/11.jpg",
+                "comment_text" : "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft ",
+                "timestamp" : "2024-08-16T14:41:55.621Z",
+                "like_count" : 1,
+                "smile_count" : 1,
+                "dislike_count" : 2,
+                "replies" : [
+                    {
+                        "id" : 5,
+                        "parent_comment" : "Bablu Pandit",
+                        "user_name" : "Guddu Pandit",
+                        "user_image" : "https://randomuser.me/api/portraits/men/45.jpg",
+                        "comment_text" : "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft ",
+                        "timestamp" : "2024-08-15T16:44:31.509Z",
+                        "like_count" : 5,
+                        "smile_count" : 0,
+                        "dislike_count" : 12,
+                        "replies" : []
+                    }
+                ]
+            },
+            {
+                "id" : 6,
+                "parent_comment" : "Abhijeet Behera",
+                "user_name" : "Munna Tripathi",
+                "user_image" : "https://randomuser.me/api/portraits/women/53.jpg",
+                "comment_text" : "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft ",
+                "timestamp" : "2024-08-16T15:00:34.664Z",
+                "like_count" : 1,
+                "smile_count" : 20,
+                "dislike_count" : 2,
+                "replies" : []
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "parent_comment" : "",
+        "user_name" : "Radhe Shyam",
+        "user_image" : "https://randomuser.me/api/portraits/men/61.jpg",
+        "comment_text" : "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft ",
+        "timestamp" : "2024-08-15T16:44:31.509Z",
+        "like_count" : 19,
+        "smile_count" : 2,
+        "dislike_count" : 2,
+        "replies" : []
+    },
+    {
+        "id" : 3,
+        "parent_comment" : "",
+        "user_name" : "Akhandnand Tripathi",
+        "user_image" : "https://randomuser.me/api/portraits/men/52.jpg",
+        "comment_text" : "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.",
+        "timestamp" : "2024-08-14T16:44:31.509Z",
+        "like_count" : 20,
+        "smile_count" : 11,
+        "dislike_count" : 12,
+        "replies" : []
+    }    
+]
