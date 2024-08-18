@@ -8,6 +8,11 @@ import { CommentType } from "../../types"
 import { dhm } from "../../utility/date";
 import InputComment from "../InputComment/InputComment";
 
+interface reactionT {
+    smile : boolean,
+    like : boolean,
+    dislike : boolean
+}
 
 const CommentCard = ({
     comment,
@@ -21,7 +26,9 @@ const CommentCard = ({
   
     const [isExpanded, setIsExpanded] = useState<Boolean>(false);
     const [isReply, setIsReply] = useState<Boolean>(false);
-
+    const [reactions , setReactions] = useState<reactionT>({smile : false, like : false, dislike: false})
+    
+    // Logic for trunucating comment text if comment is too large.
     const splittedText = comment.comment_text.split(" ");
     const textCanOverflow = splittedText.length > 50;
     const beginText = textCanOverflow ? splittedText.slice(0, 49).join(' ') : comment.comment_text;
@@ -33,6 +40,17 @@ const CommentCard = ({
         const timeDiff : number = currTime.getTime() - commentTime.getTime();
         const elapsedTime = dhm(timeDiff);
         return elapsedTime;
+    }
+
+    const clickReactionsHandler = (reaction : string, id : Number) => {
+        reactionCountHandler(reaction, id);
+        setReactions(() =>{
+            return {
+                smile : true,
+                like : true,
+                dislike : true
+            }
+        })
     }
   
     return (
@@ -49,15 +67,15 @@ const CommentCard = ({
                         Hi <Chip label={`@${comment.parent_comment}`} color="primary" /> {" "}
                     </>
                 }
-                <div dangerouslySetInnerHTML={{__html : beginText}} />
+                <span dangerouslySetInnerHTML={{__html : beginText}} />
                 {
                     textCanOverflow && (
                         <>
                             {!isExpanded && <span>... </span>}
                             <span style={{
-                               display : isExpanded === false ? "none" : "block"
+                               display : isExpanded === false ? "none" : "inline"
                             }}>
-                                <div dangerouslySetInnerHTML={{__html : endText}} />
+                                <span dangerouslySetInnerHTML={{__html : endText}} />
                             </span>
                             <span
                                 role="button" 
@@ -78,15 +96,15 @@ const CommentCard = ({
                 gap: "20px", 
                 paddingTop: "10px"}}>
             <ButtonGroup variant="text" aria-label="Basic Buttons">
-                <Button onClick={() => reactionCountHandler('smile_count', comment.id)}>
+                <Button disabled={reactions.smile} onClick={() => clickReactionsHandler('smile_count', comment.id)}>
                     <EmojiEmotionsIcon />
                     <span style={{fontSize : "16px", paddingLeft: "4px"}}>{comment.smile_count.toString()}</span>
                 </Button> 
-                <Button onClick={() => reactionCountHandler('like_count', comment.id)}>
+                <Button disabled={reactions.like} onClick={() => clickReactionsHandler('like_count', comment.id)}>
                     <ThumbUpAltIcon/>
                     <span style={{fontSize : "16px", paddingLeft: "4px"}}>{comment.like_count.toString()}</span>
                 </Button>
-                <Button onClick={() => reactionCountHandler('dislike_count', comment.id)}>
+                <Button disabled={reactions.dislike} onClick={() => clickReactionsHandler('dislike_count', comment.id)}>
                     <ThumbDownIcon/>
                     <span style={{fontSize : "16px", paddingLeft: "4px"}}>{comment.dislike_count.toString()}</span>
                 </Button>

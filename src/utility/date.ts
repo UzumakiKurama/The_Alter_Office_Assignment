@@ -13,5 +13,10 @@ export function dhm(t : number){
     h = 0;
   }
 
-  return `${d} days, ${h} hours, ${m} minutes ago`;
+  if(d > 0) 
+    return `${d} days ago`;
+  else if(h > 0)
+    return `${h} hours, ${m} minutes ago`;
+  else 
+  return `${m} minutes ago`
 }
